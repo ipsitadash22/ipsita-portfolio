@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ipsita Dash Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Ipsita Dash</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	         
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Ipsita Dash</span></h1>
+
+						<!-- Element to contain animated typing -->
+<span id="typing-animation"></span>
+
+<script>
+// Initialize the typing animation
+const typingAnimationElement = document.getElementById('typing-animation');
+
+// Array of roles/skills to display
+const typingTexts = [
+  'Full Stack Developer ',
+  'Backend Engineer ',
+  'AI Enthusiast ',
+  'Problem Solver ',
+];
+
+
+// Function to display typing animation for a given text
+function playTypingAnimation(text) {
+  // Loop through each character and add it to the element
+  for (let i = 0; i < text.length; i++) {
+    setTimeout(() => {
+      typingAnimationElement.textContent += text[i];
+    }, i * 150); // typing speed
+  }
+
+  // Once animation is complete, reset text and move to next
+  setTimeout(() => {
+    typingAnimationElement.textContent = '';
+    playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+  }, text.length * 150 + 1000); // pause 1s after typing finishes
+}
+
+// Start typing animation
+playTypingAnimation(typingTexts[0]);
+</script>
+
+<br><br>
+<h2>Aspiring Software Engineer</h2>
+<p>
+  <p>
+  <a href="https://github.com/ipsitadash22" class="btn btn-primary py-3 px-4">GitHub</a>
+  <a href="https://www.linkedin.com/in/ipsita-dash-0550b7245/" class="btn btn-white btn-outline-white py-3 px-4">LinkedIn</a>
+  <a href="https://leetcode.com/u/ipsitaaaaa/" class="btn btn-primary py-3 px-4">LeetCode</a>
+</p>
+
+</p>
+
+
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+  <div class="container">
+    <div class="row justify-content-center align-items-stretch">
+      <div class="col-md-10 col-lg-8 d-flex">
+        <div class="img-about img d-flex align-items-stretch w-100">
+          <div class="overlay w-100 p-4">
+            <div class="row">
+              <!-- Profile Image -->
+              <div class="col-md-5 d-flex justify-content-center">
+                <div class="about-img">
+                  <img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="Ipsita Dash">
+                </div>
+              </div>
+              <!-- Profile Info & Skills -->
+              <div class="col-md-7">
+                <div class="about-info mb-4">
+                  <p><span class="title-s">Name: </span> <span>Ipsita Dash</span></p>
+                  <p><span class="title-s">Job Role: </span> <span>Software Developer</span></p>
+                  <p><span class="title-s">Address: </span> <span>Kolkata, India</span></p>
+                </div>
+
+                <!-- Skills -->
+                <div class="skill-mf">
+                  <p class="title-s">Skills</p>
+
+                  <span>C / C++</span> <span class="pull-right">90%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;"></div>
+                  </div>
+
+                  <span>JavaScript (Node.js, Express, React)</span> <span class="pull-right">88%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 88%;"></div>
+                  </div>
+
+                  <span>MongoDB / MySQL</span> <span class="pull-right">80%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;"></div>
+                  </div>
+
+                  <span>Python (FastAPI)</span> <span class="pull-right">80%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;"></div>
+                  </div>
+
+                  <span>System Design & REST APIs</span> <span class="pull-right">75%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%;"></div>
+                  </div>
+                </div>
+                <!-- End Skills -->
+              </div>
+              <!-- End Profile Info & Skills -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	
+<section class="ftco-section ftco-no-pb" id="resume-section">
+  <div class="container">
+    <div class="row justify-content-center pb-5">
+      <div class="col-md-10 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Resume</h1>
+        <h2 class="mb-4">Resume</h2>
+        <p>Computer Science undergraduate with strong experience in 
+           <b>Full Stack Development</b>, <b>Backend Engineering</b>, and <b>AI-driven applications</b>. 
+           Skilled in building scalable platforms and passionate about solving real-world problems with clean architecture.</p>
+
+        <!-- Resume Button -->
+        <p class="mt-4">
+          <a href="https://drive.google.com/file/d/1DQY5tYOsBhWXoj3jI-SXIffsWNpf0KFU/view?usp=sharing" target="_blank" class="btn btn-primary py-3 px-4">
+            📄 View My Resume
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="row">
+    <h1 class="big-4">Experience</h1>
+    <div class="underline"></div>
+</div>
+<br>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+            <span class="date">Oct 2024 – Mar 2025</span>
+            <h2>Ascend Educare Scholar (Mentee)</h2>
+            <span class="position">D. E. Shaw & Co.</span>
+            <p class="mt-4">Ranked in the Top 0.4% (80/18,000) in a competitive 6-month mentorship program on software engineering.  
+                <ul>
+                    <li>Built a backend capstone with FastAPI, MongoDB, and REST APIs processing 20,000+ loan entries for real-world financial simulations.</li>
+                    <li>Implemented secure authentication and applied best practices to enhance modularity.</li>
+                    <li>Gained hands-on experience in DSA, OOP, DBMS, SDLC, and System Design.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+            <span class="date">Jun 2024 – Jul 2024</span>
+            <h2>Web Developer Intern</h2>
+            <span class="position">Spectrix Creations</span>
+            <p class="mt-4">Worked as a frontend web developer intern, focusing on company website development.  
+                <ul>
+                    <li>Developed and deployed the official website using HTML, CSS, and JavaScript, improving load speed by 45%.</li>
+                    <li>Delivered responsive, cross-browser designs optimized for 15+ devices.</li>
+                    <li>Deployed production-ready version on Vercel.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+<div class="row">
+    <h1 class="big-4">Education</h1>
+    <div class="underline"></div>
+</div>
+<br>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="resume-wrap ftco-animate">
+            <span class="date">2022 – Present</span>
+            <h2>Bachelor of Technology in Computer Science and Engineering (with Business Systems)</h2>
+            <span class="position">Vellore Institute of Technology, AP Campus</span>
+            <p class="mt-4">CGPA: 8.87</p>
+        </div>
+    </div>
+</div>
+
+
+</div>
+</div>
+</section>
+
+   
+
+   <section class="ftco-section" id="project-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Projects</h1>
+        <h2 class="mb-4">Projects</h2>
+        <p>Some of the impactful projects I have built using modern web technologies and AI/ML.</p>
+      </div>
+    </div>
+
+    <div class="row d-flex">
+      <!-- Project 1: ABSecure -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_abs.jpg');">
+          </a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading">ABSecure: Smart ABS Management</h3>
+            <p>AI-powered loan securitization platform under D. E. Shaw’s DESIS Ascend Program, processing 20K+ loans for ABS trading.</p>
+            <ul>
+              <li>14+ FastAPI endpoints for loan intake, risk scoring & tranche generation.</li>
+              <li>ML model (92% accuracy) to auto-fill missing risk scores, reducing manual review by 35%.</li>
+              <li>JWT authentication & RBAC, dual access for banks & investors.</li>
+            </ul>
+            <p>
+              
+              <a href="https://github.com/ipsitadash22/ABSecure" class="btn btn-sm btn-outline-primary" target="_blank">GitHub</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Event Booking Web App -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_event.jpg');">
+          </a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading">Event Booking Web App</h3>
+            <p>Full-stack event management platform enabling creation, registration, and event tracking for 50+ users.</p>
+            <ul>
+              <li>RESTful backend with Express.js & MongoDB, 100+ CRUD ops with <150ms latency.</li>
+              <li>Real-time persistence with Mongoose schemas, reducing inconsistencies by 40%.</li>
+              <li>CORS integration for seamless frontend-backend communication.</li>
+            </ul>
+            <p>
+              <a href="https://event-planning-website-main.vercel.app/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+              <a href="https://github.com/ipsitadash22/Event-Planning-website-main" class="btn btn-sm btn-outline-primary" target="_blank">GitHub</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: RevAI -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry">
+          <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_revai.jpg');">
+          </a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading">RevAI – AI Code Reviewer</h3>
+            <p>AI-powered code review tool with real-time feedback using Gemini 2.0 Flash, analyzing 300+ LOC per session.</p>
+            <ul>
+  <li>PrismJS editor with syntax highlighting & AI-generated Markdown feedback.</li>
+  <li>Node.js backend with Gemini API, structured logging, and 99% uptime.</li>
+  <li>Reduced manual review effort by 50%.</li>
+  <li>Supports 4 programming languages with seamless front-end and back-end integration.</li>
+</ul>
+
+            <p>
+              <a href="https://rev-ai-ai-code-reviewer.vercel.app/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+              <a href="https://github.com/ipsitadash22/RevAI-AI-code-reviewer" class="btn btn-sm btn-outline-primary" target="_blank">GitHub</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+	
+	
+	  
+	</section>
+
+
+
+   
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
